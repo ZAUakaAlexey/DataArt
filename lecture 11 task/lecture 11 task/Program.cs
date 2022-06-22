@@ -1,4 +1,7 @@
-﻿//Task #1
+﻿//Hi guys, I added my test tasks to my GitHub, so you can find all them by link below
+//https://github.com/ZAUakaAlexey/DataArt
+
+//Task #1
 
 var listToDo = new List<string>() { "awake", "take a shower", "breakfast", "walk with dog", "dulingo", "dataArt", "itgid"};
 var listDone = new List<string>();
@@ -12,7 +15,7 @@ do
     Console.WriteLine("TASK #1\n");
     ShowTasks(listToDo, listDone);
 
-    Console.WriteLine("\nPlease, enter task, or 'stop' to finish");
+    Console.WriteLine("\nPlease, enter task, or 'stop' to finish current task");
     var input = Console.ReadLine();
 
     if (input.Equals("stop", comp))
@@ -24,6 +27,9 @@ do
     ShowTasks(listToDo, listDone);
 
 } while (true);
+
+PressAnyKeyToCont();
+
 
 //Task #1 methods
 
@@ -86,7 +92,7 @@ do
     Console.WriteLine("TASK #2");
     ShowStudentScores(studentSrores);
 
-    Console.WriteLine("\nPlease, enter score, or 'stop' to finish");
+    Console.WriteLine("\nPlease, enter score, or 'stop' to finish current task");
     var input = Console.ReadLine();
 
     if (input.Equals("stop", comp))
@@ -94,12 +100,35 @@ do
         break;
     }
 
-    studentSrores.Add(int.Parse(input));
+    studentSrores.Add(AskScore(input));
     ShowStudentScores(studentSrores);
 
 } while (true);
 
+PressAnyKeyToCont();
+
 //Task #2 methods
+
+int AskScore(string str)
+{
+    while (true)
+    {
+        
+        bool result = int.TryParse(str, out int score);
+
+        if (result)
+        {
+            return score;
+        }
+        else
+        {
+            Console.WriteLine($"!!!Wrong input >>>{str}<<< !!!\n");
+            Console.WriteLine($"Input score, like integer, please:");
+            str = Console.ReadLine();
+        }
+    }
+}
+
 void ShowStudentScores(List<int> inputlist)
 {
     var output = string.Empty;
@@ -125,12 +154,13 @@ void ShowStudentScores(List<int> inputlist)
 //===============================================================================================================================//
 //Task #3
 
-Console.WriteLine("TASK #3");
 var guestsList = new Dictionary<string, List<int>>();
 
 //main loop
 do
 {
+    Console.Clear();
+    Console.WriteLine("TASK #3");
     var inputName = AskGuestName();
     if (inputName.Equals("stop", comp))
     {
@@ -152,11 +182,12 @@ ShowAllGuests(guestsList,1);
 ShowAllGuests(guestsList,2);
 ShowAllGuests(guestsList,3);
 
-//===============================================================================================================================//
+PressAnyKeyToCont();
+
 //Task #3 methods
 string AskGuestName()
 {
-    Console.WriteLine("Please, enter Name of next guest or 'stop' to finish");
+    Console.WriteLine("Please, enter Name of next guest or 'stop' to finish current task");
     var inputString = Console.ReadLine();
 
     return inputString;
@@ -166,7 +197,7 @@ int AskGuestAge(string name)
 {
     while (true)
     {
-        Console.WriteLine($"Input {name}'s age, please, like integer:");
+        Console.WriteLine($"Input >>>{name}'s<<< age, as integer, please:");
         var input = Console.ReadLine();
         bool result = int.TryParse(input, out int age);
 
@@ -176,7 +207,7 @@ int AskGuestAge(string name)
         }
         else
         {
-            Console.WriteLine($"Wrong input! You must enter {name}'s age like an integer, please");
+            Console.WriteLine($"!!! Wrong input >>>{input}<<< !!!\nYou must enter {name}'s age like an integer, please");
         }
     }
 }
@@ -204,7 +235,7 @@ int ChooseRoom (int num)
 void ShowAllGuests(Dictionary<string, List<int>> dict1, int num )
 {
     int count = 0;
-    Console.WriteLine($"\nList of the guest located in the {num} hall:");
+    Console.WriteLine($"\nList of the guest located in the #{num} hall:");
     Console.WriteLine("{0,-3}{1,-30}{2,-3:N2}", "#", "Guest", "Age");
     foreach (var guest in dict1)
     {
@@ -220,7 +251,7 @@ void ShowAllGuests(Dictionary<string, List<int>> dict1, int num )
     }
     else
     {
-        Console.WriteLine($"\nWe have {count} total guests in the #{num} hall");
+        Console.WriteLine($"\nWe have >>>{count}<<< total guests in the #{num} hall");
     }
 }
 
@@ -234,7 +265,7 @@ do
 {
     ShowClasses();
 
-    Console.WriteLine("\nPlease, input the class name");
+    Console.WriteLine("\nPlease, input the class name or 'stop' to finish current task");
     string input = Console.ReadLine();
 
     if (input.Equals("stop", comp))
@@ -248,6 +279,8 @@ do
    
 
 } while (true);
+
+PressAnyKeyToCont();
 
 //Task #4 methods
 void AskForClasses(string str)
@@ -324,4 +357,12 @@ float GetAvarage (List<int> inputList)
     }
 
     return sum/inputList.Count;
+}
+
+//Global methods
+void PressAnyKeyToCont()
+{
+    Console.WriteLine("\n\n!!!Thanks for spent time!!!");
+    Console.WriteLine("Press any key to continue...");
+    Console.ReadKey(true);
 }

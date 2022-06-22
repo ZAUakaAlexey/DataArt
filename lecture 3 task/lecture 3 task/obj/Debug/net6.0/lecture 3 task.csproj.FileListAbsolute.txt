@@ -1,0 +1,15 @@
+C:\IT\DataArt\repos\lecture 3 task\lecture 3 task\bin\Debug\net6.0\lecture 3 task.exe
+C:\IT\DataArt\repos\lecture 3 task\lecture 3 task\bin\Debug\net6.0\lecture 3 task.deps.json
+C:\IT\DataArt\repos\lecture 3 task\lecture 3 task\bin\Debug\net6.0\lecture 3 task.runtimeconfig.json
+C:\IT\DataArt\repos\lecture 3 task\lecture 3 task\bin\Debug\net6.0\lecture 3 task.dll
+C:\IT\DataArt\repos\lecture 3 task\lecture 3 task\bin\Debug\net6.0\lecture 3 task.pdb
+C:\IT\DataArt\repos\lecture 3 task\lecture 3 task\obj\Debug\net6.0\lecture 3 task.csproj.AssemblyReference.cache
+C:\IT\DataArt\repos\lecture 3 task\lecture 3 task\obj\Debug\net6.0\lecture 3 task.GeneratedMSBuildEditorConfig.editorconfig
+C:\IT\DataArt\repos\lecture 3 task\lecture 3 task\obj\Debug\net6.0\lecture 3 task.AssemblyInfoInputs.cache
+C:\IT\DataArt\repos\lecture 3 task\lecture 3 task\obj\Debug\net6.0\lecture 3 task.AssemblyInfo.cs
+C:\IT\DataArt\repos\lecture 3 task\lecture 3 task\obj\Debug\net6.0\lecture 3 task.csproj.CoreCompileInputs.cache
+C:\IT\DataArt\repos\lecture 3 task\lecture 3 task\obj\Debug\net6.0\lecture 3 task.dll
+C:\IT\DataArt\repos\lecture 3 task\lecture 3 task\obj\Debug\net6.0\refint\lecture 3 task.dll
+C:\IT\DataArt\repos\lecture 3 task\lecture 3 task\obj\Debug\net6.0\lecture 3 task.pdb
+C:\IT\DataArt\repos\lecture 3 task\lecture 3 task\obj\Debug\net6.0\lecture 3 task.genruntimeconfig.cache
+C:\IT\DataArt\repos\lecture 3 task\lecture 3 task\obj\Debug\net6.0\ref\lecture 3 task.dll

@@ -1,0 +1,11 @@
+﻿Console.WriteLine("Hello, username, please enter next data about your laptop\n");
+Console.WriteLine("Please, enter the model of your laptop:");
+string model = Console.ReadLine();
+Console.WriteLine("Please, enter year of your laptop:");
+int year = int.Parse(Console.ReadLine());
+Console.WriteLine("Please, enter the CPU frequency of your laptop:");
+double cpu = double.Parse(Console.ReadLine());
+Console.WriteLine("Please, enter the RAM amount of your laptop: ");
+int ram = int.Parse(Console.ReadLine());
+Console.WriteLine();
+Console.WriteLine($"You have the \"{model}\" laptop from the {year} year with the {cpu} CPU and the {ram} RAM installed.");
